@@ -1,7 +1,3 @@
-# Project Name
-
-A brief description of your project.
-
 ## Getting Started
 
 These instructions will help you set up and run the project on your local machine.
@@ -17,30 +13,29 @@ These instructions will help you set up and run the project on your local machin
 
    ```bash
    git clone https://github.com/andrysatko/admin_panel.git
-2. Navigate to the server directory:
+2. Add the following environment variables to `.env` file:`DATABASE_URL=""` - MongoDB connection string
+3. Navigate to the server directory ,install dependencies and generate prisma client:
 
    ```bash
    cd server
+   npm install
+   npx prisma generate
+   npx prisma db push
    ```
-3. Install the dependencies:
-   ```bash
-    npm install
-    ```
-4. Add the following environment variables to `.env` file:
-   `DATABASE_URL=""` - MongoDB connection string
-5. Run the server:
+
+4. Run the server ( it the server directory ):
    ```bash
     npm run dev
     ```
-6. Navigate to the client directory:
+5. Navigate to the client directory ( from root directory):
     ```bash
     cd client
     ```
-7. Install the dependencies:
+6. Install the dependencies:
     ```bash
      npm install
      ```
-8. Run the client:
+7. Run the client:
     ```bash
      npm run dev
      ```
