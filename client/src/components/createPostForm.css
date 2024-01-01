@@ -1,0 +1,19 @@
+.bycicle_form {
+    box-sizing: border-box;
+    height: 246px;
+    width: 100%;
+    display: inline-flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.bycicle_form_row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}

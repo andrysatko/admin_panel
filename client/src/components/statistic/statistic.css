@@ -1,0 +1,38 @@
+.statistic {
+    width: 60%;
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text , .value, .key { 
+    margin: 0px;
+}
+.text {
+    color: #000;
+    font-family: Saira;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.key {
+    color: #000;
+
+    font-family: Saira;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.value {
+    color: #000;
+    font-family: Saira;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

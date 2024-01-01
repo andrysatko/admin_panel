@@ -1,0 +1,15 @@
+.Input {
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 5px 16px;
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    outline: none;
+    border-radius: 5px;
+    background: #E8E8E8;
+}

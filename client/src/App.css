@@ -1,0 +1,83 @@
+.AdminPanel {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.content {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.left,
+.right {
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+.left {
+    padding: 0px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.divider {
+    width: 1px;
+    background: #C4C4C4;
+    top: 0;
+    bottom: 0;
+}
+
+.horizontal_divider {
+    height: 1px;
+    width: 100%;
+    background: #C4C4C4;
+    margin-left: 9px;
+}
+
+:root {
+    --total-width: 1152;
+    --first-block-width: 639;
+    --second-block-width: 513;
+}
+
+@media (min-width: 320px) {
+    .left {
+        width: 100%
+    }
+
+    .right {
+        width: 100%
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 724px) {
+    .left {
+        width: calc(var(--first-block-width)/var(--total-width)*100%);
+    }
+
+    .right {
+        width: calc(var(--second-block-width)/var(--total-width)*100%);
+    }
+
+    .content {
+        flex-direction: row;
+    }
+}
